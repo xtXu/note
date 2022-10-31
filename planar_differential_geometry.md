@@ -12,15 +12,19 @@ If the curve is closed, then $C(0)=C(1)$.
 
 **tangent:** $\vec{t}=\frac{C_p}{|C_p|}=C_s$  
 $s$ means, we find a parameter $s$, and instead of parameterized in $p$, the curve parameterized in such a way, that the tangent $C_s$ is always unti length.  
+
 $$
 |C_s|=1 \Rightarrow \left\langle C_s,C_s\right\rangle=1 \\
 \frac{\partial\left\langle C_s,C_s\right\rangle}{\partial s}=2\left\langle C_{ss},C_s\right\rangle=\frac{\partial 1}{\partial s}=0\\
 \left\langle C_{ss},C_s\right\rangle=0 \Rightarrow C_{ss}\bot C_s
 $$  
+
 $C_{ss}$ is pendicular to $C_s$, but haven't to be a unit vector. So  
+
 $$
 C_{ss} = \kappa\vec{n}
 $$  
+
 $\vec{n}$ is the normal, and $\kappa$ is defined as **curvature**, $s$ is called arclength.
 
 ## Linear Transformations
@@ -45,6 +49,7 @@ $w=\int F\left(C, C_p, C_{p p}, \ldots\right) d p=\int F\left(C, C_r, C_{r r}, \
 ## Euclidean arclength
 ![](img/2022-10-29-15-26-10.png)  
 With Euclidean transformations, the length is preserved, thus  
+
 $$
 \begin{aligned}
 C&=\left\lbrace x(p),y(p)\right\rbrace\Rightarrow C_p=\left\lbrace\frac{dx}{dp},\frac{dy}{dp}\right\rbrace \\
@@ -57,10 +62,13 @@ $$
 ## Equi-affine arclength
 ![](img/2022-10-29-16-32-06.png)  
 Area is preserved, and $v$ is now the arclength. Now we are going to look for the $v$, that make the area equal to 1, as  
+
 $$
 \left(C_v,C_{vv}\right)=1
 $$  
+
 where  
+
 $$
 \left(C_v,C_{vv}\right) = det\begin{bmatrix}x_v&x_{vv}\\y_v&y_{vv} \end{bmatrix}
 $$  
@@ -68,15 +76,20 @@ $$
 *Note: if we have a 2x2 matrix, combinded by 2 vectors, than the determinant of the matrix is the area of the parallelogram between these two vectors.*  
 
 ***Theorem:*** Any parameterization $p$ will give a parameterization $v$ that holds $\left(C_v,C_{vv}\right)=1$, following  
+
 $$
 v=\int\left(C_p, C_{p p}\right)^{1 / 3} d p
 $$  
+
 The proof is omitted, and just believe it now. 
 Then we can take $p$ equal to $s$, as  
+
 $$
 v=\int\left(C_s, C_{s s}\right)^{1 / 3} d s = \int \kappa^{1 / 3} d s
 $$  
+
 And we get a extremely interesting relationship between Euclidean arclength and Equi-Affine arclength  
+
 $$
 dv=\kappa^{1/3}ds
 $$  
