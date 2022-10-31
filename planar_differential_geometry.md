@@ -1,7 +1,7 @@
 # Planar Differential Geometry
 
 ## Planar Curves
-$C(p)=\left\{x(p),y(p)\right\},\quad p\in\left[0,1\right]$
+$C(p)=\left\lbrace x(p),y(p)\right\rbrace,\quad p\in\left[0,1\right]$
 
 If the curve is closed, then $C(0)=C(1)$.
 ![](img/2022-10-28-19-11-17.png)
@@ -32,8 +32,8 @@ $\vec{n}$ is the normal, and $\kappa$ is defined as **curvature**, $s$ is called
 ***For simplity, the affine transformations mentioned later stand for equi-affine.*** 
 
 ## Differential Signatures
-**Euclidean invariant signature:** $\left\{s,\kappa(s)\right\}$  
-The pair $\left\{s,\kappa(s)\right\}$ uniquely identifies the curve, meaning the shape up to a rotation and translation. It dont change after basic translation and rotation.
+**Euclidean invariant signature:** $\left\lbrace s,\kappa(s)\right\rbrace$  
+The pair $\left\lbrace s,\kappa(s)\right\rbrace$ uniquely identifies the curve, meaning the shape up to a rotation and translation. It dont change after basic translation and rotation.
 ![](img/2022-10-29-17-32-30.png)
 
 ## Invariant arclength should be
@@ -47,7 +47,7 @@ $w=\int F\left(C, C_p, C_{p p}, \ldots\right) d p=\int F\left(C, C_r, C_{r r}, \
 With Euclidean transformations, the length is preserved, thus  
 $$
 \begin{aligned}
-C&=\left\{x(p),y(p)\right\}\Rightarrow C_p=\left\{\frac{dx}{dp},\frac{dy}{dp}\right\} \\
+C&=\left\lbrace x(p),y(p)\right\rbrace\Rightarrow C_p=\left\lbrace\frac{dx}{dp},\frac{dy}{dp}\right\rbrace \\
 d s&=\sqrt{d x^2+d y^2}=\frac{d p}{d p} \sqrt{d x^2+d y^2}=d p \sqrt{(d x / d p)^2+(d y / d p)^2}=\left\lvert C_p\right\rvert d p \\
 s&=\int d s=\int\left\lvert C_p\right\rvert d p \\
 \text { Length } L&=\int_0^1\left\lvert C_p\right\rvert d p=\int_0\left\langle C_p, C_p\right\rangle^{1 / 2} d p=\int_0^{L} d s
@@ -93,5 +93,5 @@ $$
 $$
 $\mu$ is the affine invariant curvature.  
 
-**Euclidean invariant signature:** $\left\{v,\mu(v)\right\}$  
+**Euclidean invariant signature:** $\left\lbrace v,\mu(v)\right\rbrace$  
 ![](img/2022-10-29-17-26-57.png)
