@@ -1,6 +1,8 @@
-# Planar Differential Geometry
+# Planar & Surface Differential Geometry
 
-## Planar Curves
+## Planar Differential Geometry
+
+### Planar Curves
 $C(p)=\left\lbrace x(p),y(p)\right\rbrace,\quad p\in\left[0,1\right]$
 
 If the curve is closed, then $C(0)=C(1)$.
@@ -28,7 +30,7 @@ $$
 
 $\vec{n}$ is the normal, and $\kappa$ is defined as **curvature**, $s$ is called arclength.
 
-## Linear Transformations
+### Linear Transformations
 **Affine**: $\{\tilde{x}, \tilde{y}\}^T=A\{x, y\}^T+\bar{b}$  
 **Equi-Affine**(the area is preserved): $\{\tilde{x}, \tilde{y}\}^T=A\{x, y\}^T+\bar{b}, \text{det}(A)=1$  
 **Euclidean**(translation & rotation): $A=\left[\bar{u}_1, \bar{u}_2\right\rfloor \text { where }\left\langle\bar{u}_1, \bar{u}_2\right\rangle=0 \text { and }\left\langle\bar{u}_i, \bar{u}_i\right\rangle=1$
@@ -37,19 +39,19 @@ $\vec{n}$ is the normal, and $\kappa$ is defined as **curvature**, $s$ is called
 
 ***For simplity, the affine transformations mentioned later stand for equi-affine.*** 
 
-## Differential Signatures
+### Differential Signatures
 **Euclidean invariant signature:** $\left\lbrace s,\kappa(s)\right\rbrace$  
 The pair $\left\lbrace s,\kappa(s)\right\rbrace$ uniquely identifies the curve, meaning the shape up to a rotation and translation. It dont change after basic translation and rotation.
 
 ![](img/2022-10-29-17-32-30.png)
 
-## Invariant arclength should be
+### Invariant arclength should be
 1. Re-parameterization invariant  
 The parameter just represent the velocity to traverse the curve, and the geometric meausure is invariant.  
 $w=\int F\left(C, C_p, C_{p p}, \ldots\right) d p=\int F\left(C, C_r, C_{r r}, \ldots\right) d r$
 2. Invariant under the group of the transformations
 
-## Euclidean arclength
+### Euclidean arclength
 ![](img/2022-10-29-15-26-10.png)  
 With Euclidean transformations, the length is preserved, thus  
 
@@ -62,7 +64,7 @@ s&=\int d s=\int\left\lvert C_p\right\rvert d p \\
 \end{aligned}
 $$  
 
-## Equi-affine arclength
+### Equi-affine arclength
 
 ![](img/2022-10-29-16-32-06.png)  
 
@@ -99,7 +101,7 @@ $$
 dv=\kappa^{1/3}ds
 $$  
 
-## Equi-affine curvature
+### Equi-affine curvature
 Similar to what we did for the Euclidean case,  
 
 $$
@@ -116,4 +118,38 @@ $\mu$ is the affine invariant curvature.
 **Euclidean invariant signature:** $\left\lbrace v,\mu(v)\right\rbrace$  
 
 ![](img/2022-10-29-17-26-57.png)
+
+
+## Surface Differential Geometry
+
+### Surface
+$S(u,v)=\left\lbrace x(u,v),y(u,v),z(u,v)\right\rbrace$
++ **Normal:** $\vec{N}=\frac{S_u \times S_v}{\left\lvert S_u \times S_v\right\rvert}$
++ **Area element:** $dA=\left\lvert S_u \times S_v \right\rvert$ 
++ **Total area:** $A=\int\int\left\lvert S_u \times S_v\right\rvert d u d v$
+
+![](img/2022-10-31-11-00-18.png)
+
+Imagin a curve $C$ on the surface, we can get the tagent $C_s$, and the normal $C_{ss}=\kappa\vec{n}$. The $C_{ss}$ is pendicular to the curve, but not nessessarily to the surface. So we can project it into the surface, and get
++ **Normal Curvature:** $\kappa_n=\left\langle C_{ss},\vec{N}\right\rangle$  
+
+![](img/2022-10-31-11-25-48.png)
+
+But if we have a point on the surface, there are multiple curves that go through that point. Each curve can have a curvature. It turns out that there is one minimum curvature and one maximum. So we define
++ **Principle Curvatures:**
+
+$$
+\begin{aligned}
+&\kappa_1=\max _\theta(\boldsymbol{\kappa}) \\
+&\kappa_2=\min _\theta(\boldsymbol{\kappa})
+\end{aligned}
+$$
+
++ **Mean Curvature:** 
+
+$$H=\frac{\kappa_1+\kappa_2}{2}$$
+
++ **Gaussian Curvature:** 
+
+$$K=\kappa1 \kappa 2$$
 
