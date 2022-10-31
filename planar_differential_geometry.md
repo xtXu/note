@@ -63,7 +63,9 @@ s&=\int d s=\int\left\lvert C_p\right\rvert d p \\
 $$  
 
 ## Equi-affine arclength
+
 ![](img/2022-10-29-16-32-06.png)  
+
 Area is preserved, and $v$ is now the arclength. Now we are going to look for the $v$, that make the area equal to 1, as  
 
 $$
