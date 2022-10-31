@@ -14,8 +14,8 @@ If the curve is closed, then $C(0)=C(1)$.
 $s$ means, we find a parameter $s$, and instead of parameterized in $p$, the curve parameterized in such a way, that the tangent $C_s$ is always unti length.  
 
 $$
-|C_s|=1 \Rightarrow \left\langle C_s,C_s\right\rangle=1 \\
-\frac{\partial\left\langle C_s,C_s\right\rangle}{\partial s}=2\left\langle C_{ss},C_s\right\rangle=\frac{\partial 1}{\partial s}=0\\
+|C_s|=1 \Rightarrow \left\langle C_s,C_s\right\rangle=1 \\\\
+\frac{\partial\left\langle C_s,C_s\right\rangle}{\partial s}=2\left\langle C_{ss},C_s\right\rangle=\frac{\partial 1}{\partial s}=0\\\\
 \left\langle C_{ss},C_s\right\rangle=0 \Rightarrow C_{ss}\bot C_s
 $$  
 
@@ -70,7 +70,7 @@ $$
 where  
 
 $$
-\left(C_v,C_{vv}\right) = det\begin{bmatrix}x_v&x_{vv}\\y_v&y_{vv} \end{bmatrix}
+\left(C_v,C_{vv}\right) = det\begin{bmatrix}x_v&x_{vv}\\\\y_v&y_{vv} \end{bmatrix}
 $$  
 
 *Note: if we have a 2x2 matrix, combinded by 2 vectors, than the determinant of the matrix is the area of the parallelogram between these two vectors.*  
