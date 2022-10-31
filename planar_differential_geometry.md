@@ -83,6 +83,7 @@ $$
 
 ## Equi-affine curvature
 Similar to what we did for the Euclidean case,  
+
 $$
 \begin{aligned}
 \left(C_v, C_{v v}\right)=1 & \Rightarrow \frac{d}{d v}\left(C_v, C_{v v}\right)=0 \\
@@ -91,6 +92,7 @@ $$
 & \Rightarrow C_v \| C_{w v} \Rightarrow C_{w v}=\mu C_v
 \end{aligned}
 $$  
+
 $\mu$ is the affine invariant curvature.  
 
 **Euclidean invariant signature:** $\left\lbrace v,\mu(v)\right\rbrace$  
