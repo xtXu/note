@@ -4,6 +4,7 @@
 $C(p)=\left\lbrace x(p),y(p)\right\rbrace,\quad p\in\left[0,1\right]$
 
 If the curve is closed, then $C(0)=C(1)$.
+
 ![](img/2022-10-28-19-11-17.png)
 
 **Simplified Notation:** $C_p=\frac{\partial C}{\partial p} = [x_p,y_p]$ 
@@ -31,6 +32,7 @@ $\vec{n}$ is the normal, and $\kappa$ is defined as **curvature**, $s$ is called
 **Affine**: $\{\tilde{x}, \tilde{y}\}^T=A\{x, y\}^T+\bar{b}$  
 **Equi-Affine**(the area is preserved): $\{\tilde{x}, \tilde{y}\}^T=A\{x, y\}^T+\bar{b}, \text{det}(A)=1$  
 **Euclidean**(translation & rotation): $A=\left[\bar{u}_1, \bar{u}_2\right\rfloor \text { where }\left\langle\bar{u}_1, \bar{u}_2\right\rangle=0 \text { and }\left\langle\bar{u}_i, \bar{u}_i\right\rangle=1$
+
 ![](img/2022-10-28-20-38-52.png)
 
 ***For simplity, the affine transformations mentioned later stand for equi-affine.*** 
@@ -38,6 +40,7 @@ $\vec{n}$ is the normal, and $\kappa$ is defined as **curvature**, $s$ is called
 ## Differential Signatures
 **Euclidean invariant signature:** $\left\lbrace s,\kappa(s)\right\rbrace$  
 The pair $\left\lbrace s,\kappa(s)\right\rbrace$ uniquely identifies the curve, meaning the shape up to a rotation and translation. It dont change after basic translation and rotation.
+
 ![](img/2022-10-29-17-32-30.png)
 
 ## Invariant arclength should be
@@ -60,6 +63,7 @@ s&=\int d s=\int\left\lvert C_p\right\rvert d p \\
 $$  
 
 ## Equi-affine arclength
+
 ![](img/2022-10-29-16-32-06.png)  
 Area is preserved, and $v$ is now the arclength. Now we are going to look for the $v$, that make the area equal to 1, as  
 
@@ -109,4 +113,6 @@ $$
 $\mu$ is the affine invariant curvature.  
 
 **Euclidean invariant signature:** $\left\lbrace v,\mu(v)\right\rbrace$  
+
 ![](img/2022-10-29-17-26-57.png)
+
