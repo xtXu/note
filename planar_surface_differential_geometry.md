@@ -17,9 +17,11 @@ If the curve is closed, then $C(0)=C(1)$.
 $s$ means, we find a parameter $s$, and instead of parameterized in $p$, the curve parameterized in such a way, that the tangent $C_s$ is always unti length.  
 
 $$
-|C_s|=1 \Rightarrow \left\langle C_s,C_s\right\rangle=1 \\\\
-\frac{\partial\left\langle C_s,C_s\right\rangle}{\partial s}=2\left\langle C_{ss},C_s\right\rangle=\frac{\partial 1}{\partial s}=0\\\\
-\left\langle C_{ss},C_s\right\rangle=0 \Rightarrow C_{ss}\bot C_s
+\begin{aligned}
+|C_s|&=1 \Rightarrow \left\langle C_s,C_s\right\rangle=1 \\
+\frac{\partial\left\langle C_s,C_s\right\rangle}{\partial s}&=2\left\langle C_{ss},C_s\right\rangle=\frac{\partial 1}{\partial s}=0\\
+\left\langle C_{ss},C_s\right\rangle&=0 \Rightarrow C_{ss}\bot C_s
+\end{aligned}
 $$  
 
 $C_{ss}$ is pendicular to $C_s$, but haven't to be a unit vector. So  
